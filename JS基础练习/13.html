@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-cn">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>网页标题</title>
+	<meta name="keywords" content="关键字列表" />
+	<meta name="description" content="网页描述" />
+	<link rel="stylesheet" type="text/css" href="" />
+	<style type="text/css"></style>
+	<script type="text/javascript">
+		function nianfeng(n){
+			if(n%4==0 && n%100!=0 || n%400==0){
+				document.write("是");
+			}
+			else{
+				document.write("不是");
+			}
+		}
+		nianfeng(2000);
+
+		document.write("<br />");
+			var sum =0;
+			function qiuhe(n){
+				for(var i=1;i<=n;i++){
+					if(n%i==0){
+						sum = sum + i;
+					}
+					
+				}
+				//for(var j=1;j<=arr.length;j++){
+					//sum = sum + arr[j];
+				//}
+				//document.write(sum);
+				document.write(sum);
+			}
+	qiuhe(6);
+
+	//--------------------------------------------------------------------
+	document.write("<br />");
+	var k=100000;
+	var j=0;
+			while(k>5000){
+				if(k>50000){
+					k=k-k*0.05;
+				}else{
+					k=k-5000;
+				}
+				j++;
+			}
+document.write(j);
+document.write("<br />");
+for(var i=5;i>=1;i--){
+	for(var j=1;j<=i;j++){
+		document.write(i);
+	}
+			document.write("<br />");
+}
+	</script>
+</head>
+<body>
+
+</body>
+</html>
